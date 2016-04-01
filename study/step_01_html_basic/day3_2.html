@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table-01</title>
+    <style type="text/css">
+        table{width:645px; height: 142px;}
+        caption{border-bottom:3px solid #777;}
+        caption{text-align: left;}
+/*
+        table, td, th, tr{
+            border-width:1px;
+            border-style:solid;
+            border-color:;
+            border-spacing: collapse;
+        }
+*/
+        tbody{text-align: center;}
+        tfoot{text-align: center;}
+        span{width:10px color: #faf;}
+    </style>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h2>날씨표 작성</h2>
+        
+        <table summary="날씨만들기">
+            <thead>
+            <caption>일주일 예보</caption>
+            </thead>
+            
+            <tbody>
+            <tr>
+                <td>화<span class="1">/9.17</span></td>
+                <td>수<span class="1">/9.18</span></td>
+                <td>목<span class="1">/9.18</span></td>
+                <td>금<span class="1">/9.19</span></td>
+                <td>토<span class="1">/9.20</span></td>
+                <td>일<span class="1">/9.21</span></td>
+            </tr>
+            <tr class="2">
+                <td><img src="./img/wea/50x50_am_01.png" ara="설명...꼭꼭꼭"/></td>
+                <td><img src="./img/wea/50x50_am_01.png" ara="설명...꼭꼭꼭"/></td>
+                <td><img src="./img/wea/50x50_am_03.png" ara="설명...꼭꼭꼭"/></td>
+                <td><img src="./img/wea/50x50_am_03.png" ara="설명...꼭꼭꼭"/></td>
+                <td><img src="./img/wea/50x50_am_03.png" ara="설명...꼭꼭꼭"/></td>
+                <td><img src="./img/wea/50x50_am_03.png" ara="설명...꼭꼭꼭"/></td>
+            </tr>
+            </tbody>
+            
+            <tfoot>
+            <tr>
+                <td>맑음</td>
+                <td>맑음</td>
+                <td>구름조금</td>
+                <td>구름많음</td>
+                <td>구름많음</td>
+                <td>구름많음</td>
+            </tr>
+            <tr>
+                <td>29ºC/16ºC</td>
+                <td>29ºC/18ºC</td>
+                <td>28ºC/18ºC</td>
+                <td>26ºC/19ºC</td>
+                <td>27ºC/19ºC</td>
+                <td>26ºC/18ºC</td>
+            </tr>
+            </tfoot>
+            
+        </table>
+    </div>
+
+</body>
+
+</html>
