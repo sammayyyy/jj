@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko_KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <!--cc:IE9+tab-->
+    <!--[if 1te IE9]>
+        <script type="text/javazscript">
+        alert("구형브라우저를 사용하고 계십니다.
+            크롬이나 최신브라우저를 이용하세요.");
+        </script>
+    <!<![endif]-->
+    <title>Document</title>
+    <style type="text/css">
+        li > a{color:#127bb3; text-decoration:none;}
+/*        #header .ul_box > li > a {color:#fa0;}*/
+        ul.ul_box > li > a {color:#f55;}
+        ul .ul_box > li > a {color:#fa0;}
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>제목<a href="#">링크</a></h1>
+            <div>
+                <ul class="ul_box">
+                    <li><a href="#">pkustextlist_01_list_01</a></li>
+                    <li><a href="#">pkustextlist_01_list_02</a></li>
+                    <li><a href="#">pkustextlist_01_list_03</a></li>
+                    <li>
+                        <ul class="list_box">
+                            <li><a href="#">추가리스트</a></li>
+                            <li><a href="#">추가리스트</a></li>
+                            <li><a href="#">추가리스트</a></li>
+                            <li><a href="#">추가리스트</a></li>
+                            <li><a href="#">추가리스트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--//이름정의 없음-->
+        </div><!--//#header-->
+        <div id="article">
+            <h2>본문영역</h2>
+            <ol>
+                <li><a href="#">추가 리스트 영역</a></li>
+                <li><a href="#">추가 리스트 영역</a></li>
+                <li><a href="#">추가 리스트 영역</a></li>
+                <li><a href="#">추가 리스트 영역</a></li>
+            </ol>
+        </div><!--//#article-->
+        <style>
+            .foo{color:#f70;}
+            h2.foo{background-color:#f07;}
+            p.foo{background-color:#0af;}
+        </style>
+        <div id="footer">
+            <h2 class="foo">하단 정보영역</h2>
+            <p class="foo">아무거나</p>
+            <div class="foo">아무거나</div>
+            <ul>
+                <li class="foo">아무거나</li>
+            </ul>
+            <dl>
+                <dt class="foo">아무거나</dt>
+                <dt class="foo">아무거나</dt>
+            </dl>
+        </div><!--//#footer-->
+    </div>
+</body>
+</html>
+<!--
+    자식선택자: ">"로 구분하여 해당하는태그 내부(자식태그 선택시)
+    자손선택자: " "로(띄어쓰기) 구분 태그의 내부(자손영역, 자식의자식, 자식)
+    
+-->

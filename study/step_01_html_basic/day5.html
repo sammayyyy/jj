@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko_KR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+    <link rel="apple-touch-icon" href="#">
+    <title>form</title>
+    <style type="text/css">
+        fieldset {
+            width: 800px;
+            height: auto;
+            padding: 20px;
+            background-color: #acc;
+        }
+        
+        #form_01 {
+            display: none;
+        }
+        
+        label[for="okbtn"] {
+            width: 0;
+            height: 0;
+            display: block;
+            overflow: hidden;
+        }
+        .point::before{content:"*"; color:"#fa0"; }
+        .point::before{content:"*"; color:"#fa0"; }
+    </style>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>from영역 구조이해하기!!</h1>
+    <from action="*.asp" method="get">
+        <fieldset id="form_01">
+            <legend>해당영역 제목</legend>
+            <input type="입력형태" id="idName" name="서버언어에보내는이름" value="어떠한 정보를 받거나 보내는 값" />
+            <label for="idName">연결하고자하는 id값과 동일</label>
+        </fieldset>
+        <!--//#form_01-->
+
+        <fieldset id="form_02">
+            <legend>입력</legend>
+            <label for="user" class="point">아이디를 입력하세요.</label>
+            <input type="text" name="user" value="" id="user" /><br />
+            <label for="pwd">비밀번호를 입력하세요.</label>
+            <input type="password" name="pwd" value="" id="pwd" />
+
+            <input type="hidden" name="" value="" />
+        </fieldset>
+        <!--//#form_02-->
+
+        <fieldset id="selectBox">
+            <legend>선택</legend>
+            <p>좋아하는 성별을 선택하세요.</p>
+            <input type="radio" name="sel_01" id="ra_01" value="남성" />
+            <label for="male">남성</label>
+
+            <input type="radio" name="sel_01" id="ra_02" value="여성" />
+            <label for="female">여성</label>
+
+            <input type="radio" name="sel_01" id="ra_03" value="양성" />
+            <label for="allmale">양성</label>
+            <!--id, class like_sex-->
+            <!--form 영역일경우 linksex-->
+            <hr/>
+
+            <input type="checkbox" name="food" id="chicken" value="치킨" />
+            <lavel for="chicken">치킨</lavel>
+            <input type="checkbox" name="food" id="pizza" value="치킨" />
+            <lavel for="pizza">피자</lavel>
+        </fieldset>
+        <!--//form_03-->
+
+        <fieldset id="form_04">
+            <legend>버튼</legend>
+            <input type="submit" id="okbtn" name="okbtn" value="확인 및 전송" />
+            <label for="okbtn">확인버튼</label>
+            <input type="reset" id="canclebtn" name="canclebtn" value="취소" />
+            <label for="canclebtn">취소버튼</label>
+            <input type="button" id="morebtn" name="morebtn" value="주소검색" />
+            <label for="morebtn">개인 집주소 검색버튼</label>
+            <input type="file" id="filechek" name="filechek" value="" />
+            <label for="filechek">파일검색 및 첨부 버튼</label>
+
+        </fieldset>
+        <!--//form_04-->
+
+        <fieldset id="form_05">
+            <legend>기타</legend>
+        </fieldset>
+        <!--//form_05-->
+        
+        <fieldset>
+            <input type="submit" name="ok" value="" id="">
+            <input type="reset" name="calcle" value="" id="">
+            <input type="botton" name="btn" value="" id="">
+            <input type="image" src="./img/wea/50x50_am_01.png" name="" />
+            <input type="file" name="fileData" value="" id="fileData" />
+        </fieldset>
+        <fieldset id="etc">
+            <legend>기타기능</legend>
+            <textarea name="" id="" cols="30" rows="10" readonly="readonly">
+입력할수 있는 대화창
+줄바꿈과,                        스페이스
+탭기능  모두적용
+            </textarea><!--쇼핑몰 상품 관련 설정-->
+            <select name="sendSelsct" id="senfSelect">
+                <option>선택하세요</option>
+                <optgroup label="피복류">
+                <option value="hat">모자</option>
+                <option value="glove">장갑</option>
+                <option value="sax">양말</option>
+                </optgroup>
+                <optgroup label="악세서리">
+                <option value="ring">반지</option>
+                <option value="earing">귀걸이</option>
+                </optgroup>
+                <optgroup label="가전제품">
+                <option value="radioBox">라디오</option>
+                </optgroup>
+            </select>
+            <button type="button">
+                <img src="./img/wea/27x27_am_01.png" alt="이미지 버튼만들기" />
+            </button>
+            <button>확인하기</button>
+            <a hreg="#"></a>
+        </fieldset>
+    </from>
+</body>
+
+</html>
