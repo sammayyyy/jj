@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko_KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.jpg" />
+    <link rel="apple-touch-icon" href="./img/favicon.jpg" />
+    <!--[if lte IE 9]>   
+    <![endif]-->
+    <title>Document</title>
+    <style type="text/css">
+        /*reset.css:각자 가지고있는 여백,선 등 기타 여러기능을 초기화하는것*/
+        *{margin:0; padding:0; border:0;}
+        .clearfix::before, .clearfix::after{content:""; display: block;clear:both;}
+        /*design*/
+        #box{width:600px; margin:0 auto; }
+        #box > div{width:100%; text-align:center;}
+        #header{height:100px; line-height:100px; background-color:#f7f;}
+        #section{height:300px; line-height:300px;}
+        #section > div{height:100%; float:left;}
+            #aside{width:33.333333%; background-color:#567; }
+            #article{width:33.333334%; background-color:#953; }
+            #container{width:33.333333%; background-color:#937; }
+        #footer{height:100px; line-height:100px; background-color:#77f;}
+        /*line-height: 행간(줄간격)을 box의 높이값만큼 똑같이 작성해주면,해당하는 텍스의 위치는 수직정렬 가운데 배치,(단, 한줄만 해당!!!) 편법이다*/
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div id="box">
+        <div id="header">header</div><!--// #header-->
+        <div id="section" class="clearfix">
+            <div id="aside">aside</div><!--// #aside-->
+            <div id="article">article</div><!--// #article-->
+            <div id="container">container</div><!--// #container-->
+        </div><!--// #section-->
+        <div id="footer">footer</div><!--// #footer-->
+    </div><!--// #box -->
+</body>
+</html>
