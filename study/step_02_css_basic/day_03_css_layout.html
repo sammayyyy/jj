@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko_KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.jpg" />
+    <link rel="apple-touch-icon" href="./img/favicon.jpg" />
+    <!--[if lte IE 9]>   
+    <![endif]-->
+    <title>Document</title>
+    <style type="text/css">
+        *{margin:0; padding:0; border:0;}
+        ul,ol,li{list-style:none;}
+        /*블릿기호는 항상존재한다 블릿기호를삭제처리하려면none을 시킨다*/
+        /*design*/
+        #box{width:600px; margin:0 auto; }
+        /*브라우저 저마다생시는여백을 *기호를 붙여 margin:0; padding:0;을한다*/
+        #box > div{width:100%; text-align:center;}
+        #header{height:100px; background-color:#f7f;}
+            h1{width:60px; height:60px; background-color: #579; font-size:1em; margin:20px; float:left;}
+            #gnb{width:400px; height:30px;background-color:#fff; float:right; margin-top:50px; margin-right:10px;}
+            #gnb>h2{width:0; height:0; overflow: hidden;}
+            #gnb>ul{width:100%; height:100%;}
+            #gnb>ul>li{width:15%; height:100%; float:left; background-color: #ccc;margin-right:2%;}
+            /*margin-right를 100%가 넘게쓰고 <li class="last_margin"><a href="#">menu6</a></li>clss를달고*/
+            #gnb>ul>li>a{width:100%; height:100%; display: block; background-color: #f6f;}
+            #gnb>ul>.last_margin{margin-right:0;}
+            /*inline:크기값이 존재하지않고, 줄바꾼이 일어나지 않는 현상\*/
+            /*blick:크기가 존재하고, 줄바꾼이 일어나지 않는 현상*/
+            /*nine:존재자체가 사라지게 만드는 (공간조차없어지는)송성값*/
+            /*visivility: display 속성과 유사하지만 조금 다른성격이 있다(block,none)*/
+            /* 여백값(공간)을 만들때에는 margin 속성을사용한다!!*/
+        #section{height:300px;}
+        #section > div{float:left;}
+        #section > #aside{width:30%; height: 100%; line-height:300px; background-color:#567;float:right; }
+            #article{width:70%; height: 50%; line-height:1000%; background-color:#953; }
+            #container{width:70%; height: 50%;line-height:1000%; background-color:#937; }
+        #footer{height:100px; line-height:100px; background-color:#77f;}
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div id="box" class="clearfix">
+        <div id="header">
+            <h1>logo</h1>
+            <div id="gnb">
+            <h2>메뉴영역</h2>
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                    <li class="last_margin"><a href="#">menu6</a></li>
+                </ul>
+            </div><!--// #gnb-->
+        </div><!--// #header-->
+        <div id="section" class="clearfix">
+            <div id="aside">aside</div><!--// #aside-->
+            <div id="article">article</div><!--// #article-->
+            <div id="container">container</div><!--// #container-->
+        </div><!--// #section-->
+        <div id="footer">footer</div><!--// #footer-->
+    </div><!--// #box -->
+</body>
+</html>
