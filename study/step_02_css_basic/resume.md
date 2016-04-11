@@ -168,39 +168,67 @@ ___
 ![mpbo](./img/readme/mpbo.jpg)
 
 ### margin
-> 여백(공간이 생겨서 배경 보인다!)
+> 여백:바깥여백(공간이 생겨서 배경 보인다!) 
+    -자신과 다른 개체와의 공간을 만드는것.
+    -한쪽만 처리 가능하다.
+    -한꺼번에 처리가 가능하다.
+
 
 ### padding
-> 뼈는 그대로있고 살이 붙는다 배경이 안보인다 
+> 여백:안쪽여백 (뼈는 그대로있고 살이 붙는다 배경이 보이지않는다!) 
+    -자신의 부피가 늘어난다.
+    -한쪽만 처리 가능하다.
+    -한꺼번에 처리가 가능하다.
 
 ### border
-> 외곽선이다 
+> 외곽선: 자신의 외곽 형태에 선의 모양을 만드는것
+-border;1px solid #fac; 외곽선을 한꺼번에 처리하기
+    -boder-weight: 1px; 외곽선 두께
+    -boder-style:solid | dotted | dashes | double....; 외곽선 모양
+    -boder-color:외곽선 색상
 
 ### outline
 >크기는있다 부피는 없다(접근성때 사용)
-___
-## background
-
+    -한쪽방향만 줄수는 없다.
 ___
 ## font
 > font-weight : 굵기 nomal, right, thi, bold, bolder 서체자체에서 굵기가없으면 안먹을수도 있다.
-> font-style : 기울기 italic
-> font-size : 16px=12pt=100%=1em=1rem(기준)
-> line-height : 줄간격 한글만빼고 모든 120%
-> font-family : 서체설정 영어("myriad pro","gill san",arial) > 한글("나눔고딕",dotum,sans-serif,setif)
+> font-style : 기울기 italic | normal
+> font-size : 16px=12pt=100%=1em=1rem(최초의 설정값)
+> line-height : 1.2 | 줄간격 한글만빼고 모든 120%
+> font-family : 서체설정 영어("myriad pro","gill san",arial) > 한글("나눔고딕",dotum,sans-serif,setif) - 순서 영어먼저
  ---
 > font : {굵기 기울기 크기 / 행간 서체명(font-family를 한칸으로 쭐이기)}
-> text-decoration : underline overline none
-> letter-spacing : 자간(글자와 글자사이간격) 0:기본-값 줄어듬
-> word-spacing : 어간(단어와 단어사이간격)
+> text-decoration : underline | overline | none
+> trxt-overfolw: ellopsis; | clip; 
+    -ellipsis:지정된 크기의 글씨다 넘칠경우에 ...으로 표기(단, 감싸는 개체는 overflow:hidden;으로 처리)
+> letter-spacing : ;자간(글자와 글자사이간격) 0:기본-값 줄어듬
+> word-spacing : ;어간(단어와 단어사이간격)
 > font-stretch:장평,
 
 ##position
 > static : 기본
-> fixed : 고정 예:장바구니,스티커 > (absolute줄수있다) 
+> fixed : 강제로 브라우저상에서 위치잡기 예:장바구니,스티커 > (absolute줄수있다) 
     화면상 가운데주기 #box{position:fixed; z-index:1000; top:50%; left:50%; margin-left:-250px; margin-top:-100px;}
-> absolute(아들): 제한공간을 갖고 위치이동
+> absolute(아들): fixed처럼 완전한 자유는 아니지만 원하는 치를 정해서 배정가능 (제한공간을 갖고 위치이동)
 > relative(엄마): absolute를 만들어 주는것
+> static을 제외한 pisition 속성값은 다음과 같은 기능을 추가로 가진다
+> z-index : 100;(단위값을 못갖는다. 100단위로줘라 앞뒤의 배치를 가진다.)
+> tom, left, right, bottom 위치값을 가질수 있다.
 
-##z-index : 100;(단위값을 못갖는다. 100단위로줘라)
-> tom, left, right, bottom
+___
+## background
+> 배경이미지를 처리하는 속성
+    -body영역에서 이미지를 담을때에는 img태그를 사용하는데, img 이지지위에 다른 글씨나 기타 여러 개체를 담을 수 없다!! 때문에 img태그대신에 배경이미지로 별도로 첨부하여 사용하는 방법
+    
+    *backgound: url() repeat position;
+    -backgound-color
+    -backgound-image:url(); 이미지 가져오면 자동으로 패턴처리
+    -backgound-reprat:repeat | repeat-x | repeat-y | no-repeat;
+    -backgound-position: x축 y축;
+        -center center | left top | -100px -200px;
+    -background-attatchment: scroll | fixed;
+    
+### IR 기법(image replace) : img태그 대체방법
+
+### IS 기법(image splite) : ir기법 사용시 확장
