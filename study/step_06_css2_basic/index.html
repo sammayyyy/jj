@@ -18,21 +18,81 @@
     <script src="./js/jquery-migrate-1.3.0.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <style></style>
-    <script>$(document).ready(funcion(){});</script>
-    <title>Document</title>
+    <script>
+        
+        $(document).ready(funcion(){
+//          $() : css에서의 선택자를 표시한것. ()내부에 css선택자와 동일하게 작성. (일부예외)
+            $(".index_btn > a").on("click", function(e){
+                e.preventDefault();
+            })
+        });
+    
+    </script>
+    <title>jjweb</title>
 </head>
 <body>
     <div id="container">
         <div id="jjwebwrap">
-            <header id="jjweb"></header>
-        </div>
+            <header id="jjweb">
+                <h1 id="headH1"></h1>
+                <div class="nar"></div>
+                <div class="site_map"></div>
+                <nav id="gnb"></nav>
+            </header>
+            <div id="jjheadside"><!--side design--></div>
+        </div><!--// #jjwebwrap-->
            
-        <secion id="indexBanner"></secion>
-        <article id="indexContent"></article>
+        <section id="indexBanner">
+            <h2>jj banner</h2>
+            <div class="index_btn index_btn_01">
+                <a href role="button"><span>왼쪽 버튼</span></a>
+            </div><!--// #index_btn_01-->
+            <div class="index_btn index_btn_02">
+                <a href role="button"><span>오른쪽 버튼</span></a>
+            </div><!--// #index_btn_02-->
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <ul>
+                <li class="banner_1">banner_1</li>
+                <li class="banner_2">banner_2</li>
+                <li class="banner_3">banner_3</li>
+            </ul>
+        </section><!--// #section-->
+        
+        <article id="indexContent">
+            <h2>jj content</h2>
+            <header class="in_con_head">
+                <h1>forum</h1>
+                <div class="line"></div>
+                <div class="more"><a href="#"><span>더 보기</span></a></div>
+            </header>
+            <!--index content naration 영역 (in_con_nar)-->
+            <section class="in_con_nar">
+                <h2>본문영역 포럼 주 내용</h2>
+                <article class="in_con_nav_box"></article>
+                <article class="in_con_nar_box"></article>
+            </section>
+            
+            <header class="in_con_head">
+                <h1>forum</h1>
+                <div class="line"></div>
+                <div class="more"><a href="#"><span>더 보기</span></a></div>
+            </header>
+            <!--index content naration 영역 (in_con_nar)-->
+            <section class="in_con_nar">
+                <h2>본문영역 포럼 주 내용</h2>
+                <article class="in_con_nav_box"></article>
+                <article class="in_con_nar_box"></article>
+            </section>
+            
+        </article><!--// #article-->
             
         <div id="jjfootwrap">
             <footer id="jjfoot"></footer>
-        </div>
+        </div><!--// #jjfootwrap-->
     </div><!--// #container-->
 </body>
 </html>

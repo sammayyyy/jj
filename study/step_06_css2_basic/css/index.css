@@ -1,14 +1,151 @@
-/*-- index.css --*/
+/*---- index.css ----*/
 
-#container{width: 100%; height: auto;  background-color: #ccc;}
+#container {
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    padding-top: 60px;
+}
 
-    #jjwebwrap{width: 100%; height: 300px; background-color: #ddd;}
-        #jjweb{width: 960px; height: 100%; margin: 0 auto; background-color: #f06;}
+/*---- #header ----*/
 
-    #indexBanner{width: 960px; height: 300px; margin: 0 auto; background-color: #595959;}
+#jjwebwrap {
+    width: 100%;
+    height: 60px;
+    background-color: #f06;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+#jjweb {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: inherit;
+    position: relative;
+}
+#headH1 {
+    width: 150px;
+    height: 100%;
+    background-color: #595959;
+    background-image: url(../img/all/header/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.nar {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #acf;
+    float: left;
+}
+.site_map {
+    width: 145px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 40px;
+    background-color: #acf;
+    float: right;
+}
+#gnb {
+    width: 800px;
+    height: 30px;
+    right: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #595959;
+    position: absolute;
+    top: 60px;
+}
+#jjheadside {
+    width: 100%;
+    height: 100%;
+    background-color: #595959;
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: -50%;
+}
 
-    #indexContent{width: 960px; height: 300px; margin: 0 auto; background-color: #f06;}
+/*---- #banner ----*/
 
-    #jjfootwrap{width: 100%; height: 300px; background-color: #ddd;}
-        #jjfoot{width: 960px; height: 100%; margin: 0 auto; background-color: #595959;}
+#indexBanner {
+    width: 100%;
+    height: 430px;
+    margin: 0 auto;
+    overflow: hidden; position: relative;
+}
+/* #banner button*/
+.index_btn{width: 60px; height: 82px; position: absolute; top:50%; margin-top: -40px;}
+.index_btn > a{width: 100%; height: 100%; display: block;}
+.index_btn_01{background-color: #77f; left: 10px;}
+.index_btn_02{background-color: #292929; right: 10px;}
 
+/*// #banner*/
+#indexBanner>ul {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+}
+#indexBanner>ul>li {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left; transition: margin-left 2s ease-in;
+ transition-property:all;
+ transition-duration: 2s;
+ transition-timing-function: cubic-bezier(.21,1.47,.64,-0.31);
+ transition-delay:0.3s
+}
+    
+/* inducator */
+#indexBanner > ol{width: 50px;height: 12px; position: absolute; z-index:200; right: calc(50% - 23px); bottom:20px;}
+#indexBanner > ol > li{width: 12px; height: 12px; margin-right: 5px; float: left; background-color: #000; cursor: pointer; border-radius: 100%}
+#indexBanner > ol > li:last-child{margin-right: 0;}
+
+
+#indexBanner>ul>.banner_1 {
+    background-color: #af3;
+}
+#indexBanner>ul>.banner_2 {
+    background-color: #f3c;
+}
+#indexBanner>ul>.banner_3 {
+    background-color: #3ff;
+}
+/*test*/
+.index_btn_01:hover ~ ul>li:first-child{margin-left:calc(100% / 3);}
+.index_btn_02:hover ~ ul>li:last-child{margin-left:calc(-100% / 3);}
+
+/*---- #content ----*/
+
+#indexContent {
+    width: 900px;
+    min-height: 320px; height: auto;
+    margin: 0 auto;
+    background-color: #f06; padding: 20px 30px;
+}
+
+.in_con_head{width: 100%; height: 22px; margin-bottom: 18px; background-color: #fff;}
+.in_con_head > h1{width: 60px;height: 22px;margin-left: 8px; float: left;}
+.in_con_head > .line{width: calc(100% - 116px); height: 10px; float: left; border-bottom: 1px solid #000; margin-top: 8px;}
+.in_con_head > .more{width: 40px; height: 22px; float: right; margin-left: 8px;}
+
+.in_con_nar{width: 100%; height: 280px; background-color: #aaa; margin-bottom: 20px;}
+.in_con_nar > .in_con_nav_box{}
+.in_con_nar > .in_con_nar_box{}
+
+/*---- #footer ----*/
+
+#jjfootwrap {
+    width: 100%;
+    height: 120px;
+    background-color: #595959;
+}
+#jjfoot {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: inherit;
+}
