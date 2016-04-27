@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="#" />
     <link rel="apple-touch-icon" href="#" />
     <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css" />
     <!--[if lte IE 9]>
     <script src="./dist/html5shiv.min.js"></script>
@@ -34,9 +35,24 @@
     <div id="container">
         <div id="jjwebwrap">
             <header id="jjweb">
-                <h1 id="headH1"></h1>
+                <h1 id="headH1"><a href="./index.html"></a></h1>
                 <div class="nar"></div>
-                <div class="site_map"></div>
+                <div class="site_map">
+                    <h3>회원정보내용 및 검색</h3>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li class="me_last"><a href="#">Q&amp;A</a></li>
+                        </ul>
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend><span class="me_hidden">jj웹 검색</span></legend>
+                            <input type="search" name="searchBox" id="searchBOx" value="" />
+                            <label for="searchBox" class="me_hidden">jj웹 필요항목 검색</label>
+                            <button type="button" class="fa fa-search"><span class="me_hidden">검색</span></button>
+                        </fieldset>
+                    </form>
+                </div><!--// #site_map-->
                 <nav id="gnb"></nav>
             </header>
             <div id="jjheadside"><!--side design--></div>
@@ -91,7 +107,28 @@
         </article><!--// #article-->
             
         <div id="jjfootwrap">
-            <footer id="jjfoot"></footer>
+            <footer id="jjfoot">
+                <h2 id="footLogo"><a href="#"><span>로고</span></a></h2>
+                <ul id="foot_im">
+                    <li class="foot_1"><a href="#"><span>개인정보</span></a></li>
+                    <li class="foot_2"><a href="#"><span>취급방침</span></a></li>
+                    <li class="foot_3"><a href="#"><span>이용자약관</span></a></li>
+                    <li class="foot_4"><a href="#"><span>회사소개</span></a></li>
+                    <li class="foot_5"><a href="#"><span>고객센터</span></a></li>
+                    <address></address>
+                    <p></p>
+                </ul>
+                <div id="footMarkWrap">
+                    <ul id="foot_mark">
+                        <li class="foot_mark_1"><a href="#"><span>menu1</span></a></li>
+                    </ul>
+                    <ul id="foot_mark_on">
+                        <li class="foot_mark_on_1"><a href="#"><span>on</span></a></li>
+                        <li class="foot_mark_on_2"><a href="#"><span>on</span></a></li>
+                        <li class="foot_mark_on_3"><a href="#"><span>on</span></a></li>
+                    </ul>
+                </div>
+            </footer>
         </div><!--// #jjfootwrap-->
     </div><!--// #container-->
 </body>
