@@ -106,19 +106,19 @@
 }
 .site_map>form>fieldset>button:hover{cursor: pointer;}
 #gnb {
-    width: 780px;
+    width: 730px;
     height: 30px;
     right: 10px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #595959;
+    border-bottom: 1px solid #fff;
     position: absolute;
     top: 60px; right: 10px; 
 }
 
-#gnb > ul{width: 100%; height: 100%; margin-top: 10px;margin-left: 100px;}
+#gnb > ul{width: 100%; height: 100%; margin-top: 10px;margin-left: 5px;}
 #gnb > ul > li { float: left; height: 100%; margin-right: 50px;}
 #gnb > ul > li:last-child{margin: 0;}
-#gnb > ul > li > a { line-height: 1.875rem; color:#595959; font: italic 1rem/1.25rem "myriad pro";  letter-spacing: -0.0625; text-decoration: none;}
+#gnb > ul > li > a { line-height: 1.875rem; color:#fff; font: italic 1.1667rem/1.25rem "myriad pro";  letter-spacing: -0.0625; text-decoration: none;}
 #gnb > ul > li > a:hover{cursor: pointer; color:#f06; text-decoration: none;}
 
 #gnb>ul>li:nth-child(1)>a{}
@@ -215,14 +215,15 @@
     background-color: #af3;
 }
 #indexBanner>ul>.banner_2 {
-    background-color: #f3c;
+    background-image: url(../img/main/banner/banner_01.png); background-repeat: no-repeat; background-position: center;
 }
 #indexBanner>ul>.banner_3 {
     background-color: #3ff;
 }
 
 /*test*/
-
+.index_btn_01{background-image: url(../img/main/banner/left_btn.png);}
+.index_btn_02{background-image: url(../img/main/banner/right_btn.png);}
 .index_btn_01:hover ~ ul>li:first-child {
     margin-left: calc(100% / 3);
 }
@@ -271,16 +272,20 @@
 .in_con_nar {
     width: 100%;
     height: 280px;
-    background-color: #aaa;
     margin-bottom: 20px;
 }
-.in_con_nar > .in_con_nav_box{width: 380px;height: 280px; float: left; background-color:rgba(100,100,50,.3) ; background-image: url(../img/main/article/article_box_01.png);}
+.in_con_nar > .in_con_nav_box{width: 380px;height: 280px; float: left; background-image: url(../img/main/article/article_box_01.png);}
 .in_con_nar::after{content:""; display: block; clear: both;}
 .in_con_nar > .in_con_nav_box > ul{float: right; margin-top: 20px; margin-right: 50px;}
 .in_con_nar > .in_con_nav_box > ul > li{margin-top: 20px; }
 .in_con_nar > .in_con_nav_box > ul > li > a{color: #fff;}
 .in_con_nar > .in_con_nav_box > ul > li > a:hover{cursor: pointer;}
 
+.in_con_nar_box{width: 520px; height: 280px; float: left;}
+.nar_gic{width: 240px;height: 100%; float: left; background-image: url(../img/main/article/article_box_02.png);}
+.nar_text{width: calc(100% - 280px); height: 240px; float: right; padding: 20px; background-image:linear-gradient(-135deg, #707, #f06); overflow: hidden;}
+.nar_text>p{width: 100%; height: 100%; background-color: #fff; overflow-y:scroll ; padding-right: 50%;}
+.nar_text>p>em{color: fuchsia;}
 
 /*---- #footer ----*/
 
@@ -297,7 +302,7 @@
 }
 #footLogo {
     width: 80px;
-    height: 40px;
+    height: 35px;
     background-image: url(../img/all/footer/h2_logo.png);
     background-repeat: no-repeat;
     margin-top: 45px;
@@ -366,10 +371,11 @@
     float: right;
 }
 #foot_mark > .foot_mark_1 {
-    width: 100px;
-    height: 32px;
-    background-image: url(../img/all/footer/Group%207.png);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/all/footer/Group%207.png)
 }
+
 #foot_mark > .foot_mark_1:hover{cursor: pointer;}
 
 #foot_mark_on {

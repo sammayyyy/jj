@@ -1,0 +1,123 @@
+/*---- #footer ----*/
+
+#jjfootwrap {
+    width: 100%;
+    height: 120px;
+    background-color: #595959;
+}
+#jjfoot {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: inherit;
+}
+#footLogo {
+    width: 80px;
+    height: 40px;
+    background-image: url(../img/all/footer/h2_logo.png);
+    background-repeat: no-repeat;
+    margin-top: 45px;
+    margin-left: 30px;
+    float: left;
+}
+#footLogo:hover{cursor: pointer;}
+#foot_im {
+    width: 289px;
+    height: 13px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 88px;
+    background-image: url(../img/all/footer/f_nav.png)
+}
+#foot_im > li {
+    height: 100%;
+    float: left;
+}
+#foot_im > li:hover {
+    cursor: pointer;
+}
+#foot_im >.foot_1 {
+    width: 45px;
+    margin-right: 10px;
+}
+#foot_im >.foot_2 {
+    width: 52px;
+    margin-right: 10px;
+}
+#foot_im >.foot_3 {
+    width: 58px;
+    margin-right: 10px;
+}
+#foot_im >.foot_4 {
+    width: 48px;
+    margin-right: 10px;
+}
+#foot_im >.foot_5 {
+    width: 46px;
+}
+#foot_im > address {
+    width: 424px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 0 auto;
+    background-image: url(../img/all/footer/address.png)
+}
+#foot_im > p {
+    width: 217px;
+    height: 13px;
+    float: left;
+    margin-top: 10px;
+    background-image: url(../img/all/footer/Copyright.png);
+}
+#footMarkWrap {
+    width: 134px;
+    height: 100px;
+    float: right;
+    margin-right: 30px;
+}
+#foot_mark {
+    width: 100px;
+    height: 32px;
+    float: right;
+}
+#foot_mark > .foot_mark_1 {
+    width: 100px;
+    height: 32px;
+    background-image: url(../img/all/footer/Group%207.png);
+}
+#foot_mark > .foot_mark_1:hover{cursor: pointer;}
+
+#foot_mark_on {
+    width: 134px;
+    height: 40px;
+    margin-top: 30px;
+    float: left;
+    background-image: url(../img/all/footer/link_mark.png);
+}
+#foot_mark_on > li{
+    float: left;
+}
+#foot_mark_on >.foot_mark_on_1 {
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+}
+#foot_mark_on >.foot_mark_on_2 {
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+}
+#foot_mark_on >.foot_mark_on_3 {
+    width: 40px;
+    height: 40px;
+}
+#foot_mark_on > li:hover{
+    background-image: url(../img/all/footer/link_mark_on.png);cursor: pointer;
+}
+#foot_mark_on >.foot_mark_on_2:hover {
+    background-position: 87px;
+}
+#foot_mark_on >.foot_mark_on_3:hover {
+    background-position: 40px;
+}
