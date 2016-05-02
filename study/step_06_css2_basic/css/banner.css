@@ -75,14 +75,15 @@
     background-color: #af3;
 }
 #indexBanner>ul>.banner_2 {
-    background-color: #f3c;
+    background-image: url(../img/main/banner/banner_01.png); background-repeat: no-repeat; background-position: center;
 }
 #indexBanner>ul>.banner_3 {
     background-color: #3ff;
 }
 
 /*test*/
-
+.index_btn_01{background-image: url(../img/main/banner/left_btn.png);}
+.index_btn_02{background-image: url(../img/main/banner/right_btn.png);}
 .index_btn_01:hover ~ ul>li:first-child {
     margin-left: calc(100% / 3);
 }

@@ -13,7 +13,7 @@
 }
 #footLogo {
     width: 80px;
-    height: 40px;
+    height: 35px;
     background-image: url(../img/all/footer/h2_logo.png);
     background-repeat: no-repeat;
     margin-top: 45px;
@@ -82,10 +82,11 @@
     float: right;
 }
 #foot_mark > .foot_mark_1 {
-    width: 100px;
-    height: 32px;
-    background-image: url(../img/all/footer/Group%207.png);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/all/footer/Group%207.png)
 }
+
 #foot_mark > .foot_mark_1:hover{cursor: pointer;}
 
 #foot_mark_on {
