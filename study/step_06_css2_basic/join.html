@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/join.css" />
+    <!--[if lte IE 9]>
+    <script src="./dist/html5shiv.min.js"></script>
+    <script src="./dist/ie9.min.js"></script>
+    <script src="./dist/PIE.js"></script>
+    <script src="./dist/responsive.min.js"></script>  
+    <![endif]-->
+    <script src="./js/jquery-1.12.3.min.js"></script>
+    <script src="./js/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <style></style>
+    <script>$(document).ready(funcion(){});</script>
+    <title>join</title>
+</head>
+<body>
+    <div id="join">
+            <form action="" method="post">
+                <fieldset class="form_01">
+                    <legend>필수 입력사항</legend>
+                    <dl class="join_1">
+                        <dt>
+                            <i class="j_img"></i>
+                                <label for="user" class="j_img">
+                                    <span>가입하실아이디를 입력하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="user" name="user" value="" />
+                            <button class="j_img"><span>중복확인</span></button>
+                        </dd>
+                    </dl><!--// #join_1-->
+                    
+                    <dl class="join_2">
+                       <dt>
+                        <i class="j_img"></i>
+                                <label for="pw" class="j_img">
+                                    <span>가입하실 비밀번호를 입력하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="pw" name="pw" value="" />
+                            <p>5~15자리 사이의 비밀번호를 입력하세요.</p>
+                        </dd>  
+                    </dl><!--// #join_2-->
+                    <dl class="join_3">
+                        <dt>
+                        <i class="j_img"></i>
+                                <label for="pw_ok" class="j_img">
+                                    <span>가입하실 비밀번호를 확인 하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="pw_ok" name="pw_ok" value="" />
+                            <p>한번더 입력하세요.(비밀번호 확인용입니다)</p>
+                        </dd>  
+                    </dl><!--// #join_3-->
+                </fieldset>
+                
+                <fieldset class="form_02">
+                    <legend>기본 입력사항</legend>
+                    <dl class="join_4">
+                        <dt>
+                        <i class="j_img"></i>
+                                <label for="name" class="j_img">
+                                    <span>가입하실 성명을 작성 하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="name" name="name" value="" />
+                            <p>성명을 기입해주세요.</p>
+                        </dd>
+                    </dl><!--// #join_4-->
+                    
+                    <dl class="join_5">
+                        <dt>
+                        <i class="j_img"></i>
+                                <label for="nname" class="j_img">
+                                    <span>가입하실 성명을 작성 하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="nname" name="nname" value="" />
+                            <button class="j_img"><span>중복확인</span></button>
+                        </dd>
+                    </dl><!--// #join_5-->
+                    
+                    <dl class="join_6">
+                        <dt>
+                            <i class="j_img"></i>
+                                <label for="num_btn" class="j_img">
+                                    <span>가입하실 전화번호 입력하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <label for="num"></label>
+                            <select name="telFir" id="telFir">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="012">012</option>
+                                <option value="013">013</option>
+                                <option value="014">014</option>
+                                <option value="015">015</option>
+                                <option value="016">016</option>
+                            </select>
+                            <label for="postBox_1">전화번호 앞자리를 입력하세요.</label>
+                            <span class="line_bar"><!--전화번호 구분 라인--></span>
+                            <input type="text" id="number_2" name="number_2" value="" />
+                            <label for="postBox_2">전화번호 가운데자리를 입력하세요.</label>
+                            <span class="line_bar"><!--전화번호 구분 라인--></span>
+                            <input type="text" id="number_3" name="number_2" value="" />
+                            <label for="postBox_2">전화번호 뒷자리를 입력하세요.</label>
+                        </dd>
+                        
+                    </dl><!--// #join_6-->
+                    
+                    <dl class="join_7">
+                        
+                    </dl><!--// #join_7-->
+                </fieldset>
+                
+                <fieldset class="form_03">
+                    <legend>추가 입력사항</legend>
+                    <dl class="join_8"><dt></dt><dd></dd></dl><!--// #join_8-->
+                    <dl class="join_9">
+                        <dt>
+                            <i class="j_img"></i>
+                                <label for="postBox_btn" class="j_img">
+                                    <span>가입하실 주소의 우편번호를 입력하세요.</span>
+                                </label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="postBox_1" name="postBox_1" value="" />
+                            <label for="postBox_1">우편번호 앞자리를 입하기위해 검색버튼을 눌러주세요.</label>
+                            <span class="line_bar"><!--우편번호 구분 라인--></span>
+                            <input type="text" id="postBox_2" name="postBox_2" value="" />
+                            <label for="postBox_2">우편번호 뒷자리를 입하기위해 검색버튼을 눌러주세요.</label>
+                            <button class="j_img" id="postBox_btn"><span>중복확인</span></button>
+                        </dd>
+                    </dl><!--// #join_9-->
+                    <dl class="join_10"><dt></dt><dd></dd></dl>
+                </fieldset>
+                
+                <fieldset class="form_04">
+                    <legend>확인 및 취소</legend>
+                    <button type="submit"><span>동의함</span></button>
+                    <button type="reset"><span>취소</span></button>
+                </fieldset>
+            </form>
+    </div>
+</body>
+</html>

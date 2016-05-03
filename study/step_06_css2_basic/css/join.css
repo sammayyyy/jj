@@ -1,0 +1,69 @@
+/*---- #join ----*/
+
+#join {margin: 0 auto; width: 620px; height: auto;}
+#join>form{width: 100%; height: 100%;}
+#join>form>fieldset{width: 100%; height: auto; border-bottom: 1px solid #595959; padding-bottom: 15px; margin-bottom: 24px;}
+#join .form_01{}
+#join .form_02{}
+#join .form_03{border-bottom: 0;}
+#join .form_04{width: 100%; height: 40px; border-bottom: 0; margin: 0; padding: 0;}
+
+#join>form>fieldset>dl{width: 100%; height: 30px; margin-bottom: 10px;}
+#join>form>fieldset>dl>dt{width: 110px; height: 100%; padding-left: 7px; float: left;}
+
+.j_img{background-image: url(../work/join/join/join_icon.png); background-repeat: no-repeat;}
+
+dt>i{width: 16px; height: 20px; margin: 5px 7px; display: block; float: left;}
+dt>label{width: 60px; height: 20px; margin: 5px; display: block; float: left;}
+dt>label>span, dd>button>span{width: 0;height: 0; display: block; overflow: hidden;}
+dd>input , select{width: 240px; height: 30px; border: 2px solid #ddd; box-sizing: border-box; margin-right: 20px; text-indent: 0.06rem; float: left; border-radius: 3px;}
+dd>button{width: 100px; height: 30px; cursor: pointer; float: left;}
+
+#join>form>fieldset>dl>dd{width: 500px; height: 100%; float:left;}
+
+
+/*---- join_1 ----*/
+.join_1 dt>i{background-position: -50px 0;}
+.join_1 dt>label{ background-position: -70px 0;}
+.join_1 dd>button{ background-position: -135px -160px;}
+
+/*---- join_2 ----*/
+.join_2 dt>i{background-position: -50px -20px;}
+.join_2 dt>label{ background-position: -70px -20px;}
+.join_2 dd>p{width: 600px; height: 40px; border-bottom: 0; margin: 0; padding: 0; line-height: 30px;}
+/*---- join_3 ----*/
+.join_3 dt>i{background-position: -50px -40px;}
+.join_3 dt>label{ background-position: -70px -40px;}
+.join_3 dd>p{width: 600px; height: 40px; border-bottom: 0; margin: 0; padding: 0; line-height: 30px;}
+/*---- join_4 ----*/
+.join_4 dt>i{background-position: -50px -60px;}
+.join_4 dt>label{ background-position: -70px -60px;}
+.join_4 dd>p{line-height: 30px;}
+/*---- join_5 ----*/
+.join_5 dt>i{background-position: -50px -80px;}
+.join_5 dt>label{ background-position: -70px -80px;}
+.join_5 dd>button{ background-position: -135px -160px;}
+/*---- join_6 ----*/
+.join_6 dt>i{background-position: -50px -100px;}
+.join_6 dt>label{ background-position: -70px -100px;}
+.join_6 dd>select{width: 100px; margin-right: 0;}
+.join_6 dd>input{width: 100px; margin-right: 0;}
+.join_6 dd>.line_bar{width: 10px; height: 14px; margin: 0 10px; border-bottom:1px solid #595959; float: left;}
+.join_6 dd>label{width: 0; height: 0; display: block; overflow: hidden;}
+/*---- join_7 ----*/
+/*---- join_8 ----*/
+/*---- join_9 ----*/
+.join_9 dt>i{background-position: -50px -160px;}
+.join_9 dt>label{ background-position: -70px -160px;}
+.join_9 dd>input{width: 100px; margin-right: 0;}
+.join_9 dd>input:last-of-child{width: 100px; margin-right: 30px;}
+.join_9 dd>.line_bar{width: 10px; height: 14px; margin: 0 10px; border-bottom:1px solid #595959; float: left;}
+.join_9 dd>button{ background-position: -240px -160px; margin-left: 30px;}
+.join_9 dd>label{width: 0; height: 0; display: block; overflow: hidden;}
+/*---- join_10 ----*/
+
+
+.form_04 > button{width: 140px; height: 40px; cursor: pointer;}
+button[type="submit"]{float: left; margin-left: 130px; background-color: #f06;}
+button[type="reset"]{float: right; margin-right: 130px;}
+
