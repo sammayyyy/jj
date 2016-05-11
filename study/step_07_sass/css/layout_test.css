@@ -74,8 +74,8 @@
 #bannerBox > div {
   width: 150px;
   height: 40px;
-  border: 5px solid #aaa;
-  border-color: #fff;
+  border: #fff;
+  border-color: 5px solid #aaa;
   margin: 10px auto; }
   #bannerBox > div > a {
     width: 100%;
@@ -83,7 +83,7 @@
     display: block;
     text-align: center;
     line-height: 2.5rem;
-    color: #fff;
+    color: 5px solid #aaa;
     transition: all 0.5s ease; }
     #bannerBox > div > a:hover {
       background-color: #fff;
@@ -116,7 +116,8 @@
     right: -70%;
     bottom: 100px;
     z-index: 300;
-    transition: all 1s ease-in; }
+    transition: all 1s ease-in;
+    overflow: hidden; }
     #content #plus.inslide {
       right: 0; }
     #content #plus .charactor {
