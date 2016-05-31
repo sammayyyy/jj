@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./css/lib/normalize.css" />
+    <link rel="stylesheet" href="./css/popupGallery.css" />
+    <script src="js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/popupGallery.js"></script>
+    <!--[if lte IE 9]>
+		<script src="js/dist/html5shiv.min"></script>
+		<script src="js/dist/ie9.min.js"></script>
+		<script src="js/dist/PIE.js"></script>
+		<script src="js/dist/responsive.min.js"></script
+	<![endif]-->
+    <style></style>
+    <title>title</title>
+    <script>
+        $(document).ready(function(){
+            popupGallery();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+<!---------------- header ----------------------->
+        <header id="headerBox">
+            <div class="header_wrap">
+                <div class="sitemap_wrap">
+                    <h1>logo</h1>
+                    <div class="sitemap">
+                        <ul class="me_link">
+                            <li class="site_01"><a href="#">HOME</a></li>
+                            <li class="site_02"><a href="#">SITEMAP</a></li>
+                            <li class="site_03"><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div><!--// #sitemap-->
+                </div><!--// #sitemap_wrap-->
+            <div class="gnb">
+                    <div class="gnb_box">
+                        <ul class="me_link">
+                            <li class="gnb_01"><a href="#">낚시배소개</a></li>
+                            <li class="gnb_02"><a href="#">출조안내</a></li>
+                            <li class="gnb_03"><a href="#">승선안내/예약</a></li>
+                            <li class="gnb_04"><a href="#">조항갤러리</a></li>
+                            <li class="gnb_05"><a href="#">공지사항</a></li>
+                        </ul>
+                    </div><!--// #gnb-->
+                </div><!--// #header-->
+            </div><!--// #header_wrap-->
+        </header><!--// #headerBox -->
+        
+<!---------------- banner ----------------------->
+        <banner id="banner">
+            <div class="bannerBox"></div>
+        </banner> <!-- #banner -->
+        
+<!---------------- content ----------------------->
+        <article id="content">
+            <h2>popup image</h2>
+            <div class="popup1">
+                <div class="popupBox"><img src="#" alt=""></div>
+                <button class="close" aria-label="팝업닫기">+</button>
+            </div> <!-- // .popup1 -->
+        
+            <ul class="popup_btn">
+                <li><a href="./img/j01_big.jpg" role="button"><span>이미지팝업_01</span></a></li>
+                <li><a href="./img/j02_big.jpg" role="button"><span>이미지팝업_02</span></a></li>
+                <li><a href="./img/j03_big.jpg" role="button"><span>이미지팝업_03</span></a></li>
+                <li><a href="./img/j04_big.jpg" role="button"><span>이미지팝업_04</span></a></li>
+                <li><a href="./img/j05_big.jpg" role="button"><span>이미지팝업_05</span></a></li>
+                <li><a href="./img/j06_big.jpg" role="button"><span>이미지팝업_06</span></a></li>
+                <li><a href="./img/j07_big.jpg" role="button"><span>이미지팝업_07</span></a></li>
+                <li><a href="./img/j08_big.jpg" role="button"><span>이미지팝업_08</span></a></li>
+                <li><a href="./img/j09_big.jpg" role="button"><span>이미지팝업_09</span></a></li>
+                <li><a href="./img/j10_big.jpg" role="button"><span>이미지팝업_10</span></a></li>
+                <li><a href="./img/j11_big.jpg" role="button"><span>이미지팝업_11</span></a></li>
+                <li><a href="./img/j12_big.jpg" role="button"><span>이미지팝업_12</span></a></li>
+            </ul>
+        </article> <!-- //#article -->
+<!---------------- footer ----------------------->
+        <footer id="footer">
+            <div class="footerBox"></div>
+        </footer>  
+    </div> <!-- //#container -->
+
+</body>
+</html>
