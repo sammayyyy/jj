@@ -6,28 +6,28 @@
     
 //--------------------------------------- header --------------------------------
     
-#headerBox{width: 100%; height: auto; padding-top: 20px; 
-    >.header_wrap{width: 100%; height: auto; 
-        >.sitemap_wrap{width: 100%;height: 20px; margin: 0 auto; float: right;border-bottom: 3px solid #ccc;
-            > h1{width: 100px; height: 50px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto;}
+#headerBox{width: 100%; height: 50px; padding-top: 20px; 
+    >.header_wrap{width: 100%; height: 100%; 
+        >.sitemap_wrap{width: 100%; height:auto; margin: 0 auto; float: right; 
+            > h1{width: 10%; height: 73px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto; background-color: #333;}
             >.sitemap{width: 100%;height: 100%; margin: 0 auto;
-                >ul{width: 350px;height: 12px;float: right; margin-right: 9px; margin-top: 4px;
-                    >li{height: 100%;float: left;}
-                >.site_01 {width: 50px;margin-right: 20px;}
-                >.site_02 {width: 64px;margin-right: 20px;}
-                >.site_03 {width: 115px;}
+                >ul{width: 300px;height: 20px;float: right; margin-right: 20px; margin-top: 20px;color: #333;
+                    >li{height: 100%; float: left; border-bottom: 3px solid #333; }
+                >.site_01 {width: 42px;margin-left:20px;}
+                >.site_02 {width: 55px;margin-left:20px;}
+                >.site_03 {width: 88px;margin-left:20px;}
                 }// li
             } //.sitemap
         } // .sitemap_wrap
-        >.gnb{width: 100%; height: 30px; margin: 0 auto; float: left; margin-right: 50px;
-            >.gnb_box{width: 100%px;height: 100%; margin-right: 50px; 
-            > ul {width: 800px; height: 24px; float: right; margin-top: 10px; margin-bottom: 10px;
-                > li {height: 100%;float: left; margin-right: 20px;}
-                > .gnb_01 {width: 100px; margin-right: 50px;}
-                > .gnb_02 {width: 80px; margin-right: 50px;}
-                > .gnb_03 {width: 140px; margin-right: 50px;}
-                > .gnb_04 {width: 110px; margin-right: 50px;}
-                > .gnb_05 {width: 100px;}
+        >.gnb{width: 100%; height: 50px; margin: 0 auto; float: left; 
+            >.gnb_box{width: 100%px; height: 100%; margin-right: 10px; 
+            > ul {width: 80%; height: 50px; box-sizing: border-box; margin-left: 10%; background-color: #333;
+                > li {height: 20px; float: left; margin-left: 50px;  margin-top: 18px;border-bottom: 3px solid #ccc;}
+                > .gnb_01 {width: 80px; margin-lef: 70px; }
+                > .gnb_02 {width: 66px; margin-left: 70px; }
+                > .gnb_03 {width: 104px; margin-left: 70px;}
+                > .gnb_04 {width: 80px; margin-left: 70px;}
+                > .gnb_05 {width: 66px;}
             } //ul
             } // .gnb_box
         }  // .gnb
@@ -36,11 +36,29 @@
     
 //--------------------------------------- banner --------------------------------
     
-#banner{width: 100%;height: 400px; margin: 0 auto; float: left;background-color: #7fa; margin-top: 20px;}
+#banner{width: 100%;height: 450px; margin: 0 auto; float: left;border: 10px solid #333; margin-top: 20px;background-color: #ddd;
+    >.bannerBox{width: 100%; height: 450px; background-color: #ccc; padding: 5px; margin-left: -5px; position: relative; overflow-x: hidden;
+        >.indi{width: 160px; height: 15px; position: absolute; z-index:100; bottom: 10px; left: 50%; margin-left: -100px;
+            >li{width: 15px; left: 15px; float: left; margin-right: 20px; background-color: #fff; border-right: 50%; border-radius: 10px;
+            &:last-child{margin-right: 0;}
+                >a{width: 100%; height: 100%; display: block; text-align: center; line-height: 15px;}
+            } // li
+        } // .indi
+         >.bannerBox{width: 500%; height: 100%;
+            >li{width: 20%; height: 100%; float: left;
+            &:nth-child(1){background-color: #567;}
+            &:nth-child(2){background-color: #863;}
+            &:nth-child(3){background-color: #259;}
+            &:nth-child(4){background-color: #015;}
+            &:nth-child(5){background-color: #a61;}
+            } // li
+        } // .bannerBox
+    }// .bannerBox
+}// #banner
     
 //--------------------------------------- content --------------------------------
     
-#content{width: 100%; height: auto; padding: 20px 0;
+#content{width: 100%; height: 450px; padding: 20px 0; float: left;
     // 갤러리 팝업 상자
     .popup1{width: 100%; height: 100%; background-color: rgba(#333, 0.5); position: fixed; z-index: 500; top:0; left: 0; display: none;
         
@@ -54,9 +72,9 @@
     }// .popup1
     
     //갤러리 썸네일
-    >ul{width: 80%; height: auto; border:5px solid #ccc; box-sizing: border-box; margin-left: 10%;
+        >ul{width: 80%; height: 1000px; margin-left: 10%; margin-top: 10px;
         &:after{content: ""; display: block; clear: both;}
-        >li{width: 25%; height: 7rem; background-color: #fff; float: left; border: 1px solid #ccc; box-sizing: border-box;
+        >li{width: 25%; height: 7rem; background-color: #fff; float: left; border: 1px solid #ccc; box-sizing: border-box; 
             >a{width: 100%; height: 100%; display: block; background-color:transparenta; transition:all 0.7s;
             &:hover{background-color: #0af;}
             } // a
@@ -65,7 +83,7 @@
 } // #content
 
 .popup_btn{
-    >li>a{background-repeat: no-repeat; background-position: center; transition: all 0.5s; background-size: 100%;
+    >li>a{background-repeat: no-repeat; background-position: center; transition: all 0.5s; background-size: 100%; margin-top: 10px;
         &:hover{background-size: 130%;}
     } // a
     >li:nth-child(1)>a{background-image: url("../img/j01.jpg");}

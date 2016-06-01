@@ -1,5 +1,13 @@
 // js-07.scss
-@media screen and (min-width:1025px){
+#topAdd{width: 960px; height: 3rem; background-color: #999; padding: 1rem 20vw; position: relative;  margin: 0 auto;
+    >p{width: 80%; height: 1.5rem;line-height: 1.5rem; color: #fff; font-size: 1.3rem;}
+    >.addbox{width: 80%; height: 1.5rem; float: left;
+        >a{color: #faa;}
+    }// .addbox
+    >button{width: 10%; height: 100%; float: right; color: #fff; font-weight: bold; font-size: 2rem; position:absolute; top:0; right: 20vw;}
+} // #topadd
+
+
 .container{width: 960px; height: auto; margin: 0 auto;}
 #headerBox{width: 100%; height: auto; padding-top: 20px; background-color: #acc;
     >h1{width: 80%; height: 3rem; text-align: center; line-height: 3rem ; color: #fff;}
@@ -47,4 +55,3 @@
     >li:nth-child(11)>a{background-image: url("../img/j11.jpg");}
     >li:nth-child(12)>a{background-image: url("../img/j12.jpg");}
 } // .popup_btn
-} // pc
