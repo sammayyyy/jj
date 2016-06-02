@@ -2,79 +2,85 @@
 
 // pc.scss
 @media screen and (min-width:1025px){
-.container{width: 960px; height: auto; margin: 0 auto;
     
 //--------------------------------------- header --------------------------------
     
-#headerBox{width: 100%; height: 50px; padding-top: 20px; 
-    >.header_wrap{width: 100%; height: 100%; 
-        >.sitemap_wrap{width: 100%; height:auto; margin: 0 auto; float: right; 
-            > h1{width: 10%; height: 73px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto; background-color: #333;}
-            >.sitemap{width: 100%;height: 100%; margin: 0 auto;
-                >ul{width: 300px;height: 20px;float: right; margin-right: 20px; margin-top: 20px;color: #333;
-                    >li{height: 100%; float: left; border-bottom: 3px solid #333; }
-                >.site_01 {width: 42px;margin-left:20px;}
-                >.site_02 {width: 55px;margin-left:20px;}
-                >.site_03 {width: 88px;margin-left:20px;}
-                }// li
-            } //.sitemap
-        } // .sitemap_wrap
-        >.gnb{width: 100%; height: 50px; margin: 0 auto; float: left; 
-            >.gnb_box{width: 100%px; height: 100%; margin-right: 10px; 
-            > ul {width: 80%; height: 50px; box-sizing: border-box; margin-left: 10%; background-color: #333;
-                > li {height: 20px; float: left; margin-left: 50px;  margin-top: 18px;border-bottom: 3px solid #ccc;}
-                > .gnb_01 {width: 80px; margin-lef: 70px; }
-                > .gnb_02 {width: 66px; margin-left: 70px; }
-                > .gnb_03 {width: 104px; margin-left: 70px;}
-                > .gnb_04 {width: 80px; margin-left: 70px;}
-                > .gnb_05 {width: 66px;}
-            } //ul
-            } // .gnb_box
-        }  // .gnb
-    } // .header_wrap
-}// #headBox
-    
+.container{width: 960px; height: auto; margin: 0 auto; 
+    #headerBox{width: 100%; height: 50px; padding-top: 20px; 
+        >.header_wrap{width: 100%; height: 100%; 
+            >.sitemap_wrap{width: 100%; height:auto; margin: 0 auto; float: right; 
+                > h1{width: 10%; height: 73px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto; background-color: #333;}
+                >.sitemap{width: 100%;height: 100%; margin: 0 auto;
+                    >ul{width: 300px;height: 20px;float: right; margin-right: 20px; margin-top: 20px;color: #333;
+                        >li{height: 100%; float: left; border-bottom: 3px solid #333; }
+                    >.site_01 {width: 42px;margin-left:20px;}
+                    >.site_02 {width: 55px;margin-left:20px;}
+                    >.site_03 {width: 88px;margin-left:20px;}
+                    }// li
+                } //.sitemap
+            } // .sitemap_wrap
+            >.gnb{width: 100%; height: 50px; margin: 0 auto; float: left; 
+                >.gnb_box{width: 100%px; height: 100%; margin-right: 10px; 
+                > ul {width: 80%; height: 50px; box-sizing: border-box; margin-left: 10%; background-color: #333;
+                    > li {height: 20px; float: left; margin-left: 50px;  margin-top: 18px;border-bottom: 3px solid #ccc;}
+                    > .gnb_01 {width: 80px; margin-lef: 70px; }
+                    > .gnb_02 {width: 66px; margin-left: 70px; }
+                    > .gnb_03 {width: 104px; margin-left: 70px;}
+                    > .gnb_04 {width: 80px; margin-left: 70px;}
+                    > .gnb_05 {width: 66px;}
+                } //ul
+                } // .gnb_box
+            }  // .gnb
+        } // .header_wrap
+    }// #headBox
+} // .container
 //--------------------------------------- banner --------------------------------
     
-#banner{width: 100%;height: 450px; margin: 0 auto; float: left;border: 10px solid #333; margin-top: 20px;background-color: #ddd;
-    >.bannerBox{width: 100%; height: 450px; background-color: #ccc; padding: 5px; margin-left: -5px; position: relative; overflow-x: hidden;
-        >.indi{width: 160px; height: 15px; position: absolute; z-index:100; bottom: 10px; left: 50%; margin-left: -100px;
-            >li{width: 15px; left: 15px; float: left; margin-right: 20px; background-color: #fff; border-right: 50%; border-radius: 10px;
-            &:last-child{margin-right: 0;}
-                >a{width: 100%; height: 100%; display: block; text-align: center; line-height: 15px;}
-            } // li
-        } // .indi
-         >.bannerBox{width: 500%; height: 100%;
-            >li{width: 20%; height: 100%; float: left;
-            &:nth-child(1){background-color: #567;}
-            &:nth-child(2){background-color: #863;}
-            &:nth-child(3){background-color: #259;}
-            &:nth-child(4){background-color: #015;}
-            &:nth-child(5){background-color: #a61;}
-            } // li
-        } // .bannerBox
-    }// .bannerBox
+#banner{width: 100%;height: 500px; margin: 0 auto; border: 1px solid #333;  margin-top: 100px;background-color: #ddd; position: relative; overflow: hidden;
+    >.btn{width: 100%; height: 0; position: relative;
+        >button{width: 50px;height: 500px; position: absolute; top:0; background-color:rgba(255,255,255,0.5);}
+        >button:hover{background-color:rgba(255,255,255,0.8);}
+        >button.l_btn{left: 0;}
+        >button.r_btn{right: 0;}
+    }//.btn
+    
+    .ban{width: 600%; height: 100%; margin-left: -100%;
+        >li{width:calc(100% / 6); height: 100%; float:left; text-align: center; line-height: 500px; font-size: 4rem;}
+        >.box1{background-color:#0cf;}
+        >.box2{background-color:#f5c;}
+        >.box3{background-color:#aac;}
+        >.box4{background-color:#ac7;}
+        >.box5{background-color:#7ac;}
+    } //.ban
+    
+    .ind{width: 400px; height: 20px; position: absolute; bottom: 10px; left: 50%; margin-left: -150px;
+        >li{width: 20px; height: 20px; background-color:#fff; border-radius:10px; float: left; margin-left: 30px;text-align: center; line-height: 20px; cursor: pointer; transition:all 0.5s;
+            >span{width: 0;height: 0;display: block;overflow: hidden;}
+        } // li
+        >li:hover{background-color: #515151;}
+    } //.ind
+    .ind>li.indWidth{width:60px; background-color: #ccc; box-shadow: 2px 2px 2px #515151;}
 }// #banner
     
 //--------------------------------------- content --------------------------------
     
-#content{width: 100%; height: 450px; padding: 20px 0; float: left;
+#content{width: 960px; height: 400px; margin: 0 auto; margin-top: 50px; 
     // 갤러리 팝업 상자
-    .popup1{width: 100%; height: 100%; background-color: rgba(#333, 0.5); position: fixed; z-index: 500; top:0; left: 0; display: none;
+    >.popup1{width: 100%; height: 100%; background-color: rgba(#333, 0.5); position: fixed; z-index: 500; top:0; left: 0; display: none; 
         
-        .popupBox{width: 60%; height: auto; background-color: #fff; border: 3px solid #7fa; position: absolute; left: 20%; top:11%; border-radius: 10px; box-sizing: border-box; box-shadow: 1px 1px 1px #333;
+        >.popupBox{width: 40%; height: auto; background-color: #fff; border: 3px solid #333; position: absolute; left: 30%; top:20%; border-radius: 10px; box-sizing: border-box; box-shadow: 1px 1px 1px #333;
             >img{width: 100%; height: auto;}
         } //.popupBox
         
-        .close{width: 2rem; height: 2rem; background-color: #333; color: #fff; font-weight: bold; position: absolute; right: calc(20% - 1rem); top: calc(11% - 1rem); z-index: 700; border-radius: 50%; font-size: 1.5rem; transition: all 0.5s;
+        >.close{width: 2rem; height: 2rem; background-color: #333; color: #fff; font-weight: bold; position: absolute; right: calc(30% - 1rem); top: calc(20% - 1rem); z-index: 700; border-radius: 50%; font-size: 1.5rem; transition: all 0.5s;
             &:hover{transform: rotate(45deg);}
         }// .close
     }// .popup1
     
     //갤러리 썸네일
-        >ul{width: 80%; height: 1000px; margin-left: 10%; margin-top: 10px;
+        >ul{width: 80%; height: 450px; margin-left: 10%; margin-top: 10px;
         &:after{content: ""; display: block; clear: both;}
-        >li{width: 25%; height: 7rem; background-color: #fff; float: left; border: 1px solid #ccc; box-sizing: border-box; 
+        >li{width: 25%; height: 25%; background-color: #fff; float: left; border: 1px solid #333; box-sizing: border-box; 
             >a{width: 100%; height: 100%; display: block; background-color:transparenta; transition:all 0.7s;
             &:hover{background-color: #0af;}
             } // a
@@ -101,7 +107,9 @@
 } // .popup_btn
     
 //--------------------------------------- footer --------------------------------
-    
-    
-} // .container
+#footer{width: 960px; height: 100px; margin: 0 auto; border:  1px solid #333;  background-color: #ccc;
+    .footerBox{}
+        
+    }
+
 } // pc
