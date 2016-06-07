@@ -71,7 +71,7 @@
                 border-bottom: 3px solid #ccc; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_01 {
                 width: 80px;
-                margin-lef: 70px; }
+                margin-left: 70px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_02 {
                 width: 66px;
                 margin-left: 70px; }
@@ -83,6 +83,14 @@
                 margin-left: 70px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_05 {
                 width: 66px; }
+
+  .fix {
+    width: 50px;
+    height: 500px;
+    background-color: #ccc;
+    position: fixed;
+    float: right;
+    margin-top: 50%; }
 
   #banner {
     width: 100%;
@@ -261,11 +269,18 @@
   .popup_btn > li:nth-child(12) > a {
     background-image: url("../img/j12.jpg"); }
 
-  #footer {
-    width: 960px;
-    height: 100px;
-    margin: 0 auto;
-    border: 1px solid #333;
+  .footer {
+    color: #333;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+    font-size: 1rem;
+    text-align: center; }
+    .footer > p > a {
+      color: #333;
+      text-decoration: none; }
+
+  .footer > p > a:hover {
     background-color: #ccc; } }
 
 /*# sourceMappingURL=pc.css.map */
