@@ -6,28 +6,33 @@
 //--------------------------------------- header --------------------------------
     
 .container{width: 960px; height: auto; margin: 0 auto; 
-    #headerBox{width: 100%; height: 50px; padding-top: 20px; 
+    #headerBox{width: 100%; height: 50px;
         >.header_wrap{width: 100%; height: 100%; 
-            >.sitemap_wrap{width: 100%; height:auto; margin: 0 auto; float: right; 
-                > h1{width: 95px; height: 73px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto; background-color: #333;}
+            >.sitemap_wrap{width: 100%; height:auto; margin: 0 auto; float: left; 
+                >.logo{width: 100px; height: 100px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto;  background-color: #333; position: fixed; z-index: 50px;
+                    >ul{width: 100%; height: 100%;background-color: #333;
+                        >li{width:100%; height: 100%; float: left; margin: 0 auto;}
+                    }//ul
+                }//logo
+                >.logo:hover{height: 120px;}
                 >.sitemap{width: 100%;height: 100%; margin: 0 auto;
-                    >ul{width: 300px;height: 20px;float: right; margin-top: 20px;color: #333;
-                        >li{height: 100%; float: left; border-bottom: 3px solid #333; }
+                    >ul{width: 300px;height: 20px;float: right; margin-top: 70px;color: #333;
+                        >li{height: 100%; float: left; border-bottom: 3px solid #333;}
                     >.site_01 {width: 42px;margin-left:36px;}
                     >.site_02 {width: 55px;margin-left:36px;}
                     >.site_03 {width: 88px;margin-left:36px;}
                     }// li
                 } //.sitemap
             } // .sitemap_wrap
-            >.gnb{width: 100%; height: 50px; margin: 0 auto; float: left; 
-                >.gnb_box{width: 100%; height: 100%; margin-right: 10px; 
-                > ul {width: 865px; height: 50px; box-sizing: border-box; margin-left: 10%; background-color: #349;
+            >.gnb{width: 860px; height: 50px; margin: 0 auto; float: right; position: fixed; margin-left: 50px;
+                >.gnb_box{width: 100%; height: 100%; float: right;
+                > ul {width: 860px; height: 50px; margin-left: 5%;
                     > li {height: 20px; float: left; margin-left: 50px;  margin-top: 18px;border-bottom: 3px solid #ccc;}
                     > .gnb_01 {width: 80px; margin-left: 70px; }
                     > .gnb_02 {width: 66px; margin-left: 70px; }
                     > .gnb_03 {width: 104px; margin-left: 70px;}
                     > .gnb_04 {width: 80px; margin-left: 70px;}
-                    > .gnb_05 {width: 66px;}
+                    > .gnb_05 {width: 66px; margin-left: 70px;}
                 } //ul
                 } // .gnb_box
             }  // .gnb
@@ -36,27 +41,26 @@
 } // .container
 
 //--------------------------------------- fix --------------------------------
-.fix{width: 50px; height: 500px; background-color: #ccc; position: fixed; margin-top: 10%;margin-bottom: 10px; float: right; right: 0;
-    >ul{
-        >li{}
+.fix{width: 88px; height: 500px; background-color: #ccc; position: fixed; margin-top: 10%; float: right; right: 0;
+    >ul{width: 100%;height: 100%; margin: 0 auto;
+        >li{width: 88px;height: 20px;float: left; margin-top: 40px;color: #333; font-weight: inherit;}
+        >li:nth-child(1)>a{width: 42px;}
+        >li:nth-child(2)>a{width: 55px;}
+        >li:nth-child(3)>a{width: 88px;}
     }
-    }  
+}  
     
 //--------------------------------------- banner --------------------------------
-.banner {position: relative;width: 100%;height: 50rem;padding: 0 5%;margin-top: 100px;overflow: hidden;backface-visibility: hidden;
-}
-
-.banner .background {width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: -40;transform: translate3d(0,0,0) scale(1.25);background-image: url(../../img/banner.jpg); background-size: cover;
+.banner {position: relative; width: 100%;height: 50rem;padding: 0 5%;overflow: hidden;backface-visibility: hidden;
+    >h1 {font-size: 4rem; color: #EEE; margin: 0;line-height: 40rem;text-transform: uppercase;text-shadow: 0 0 .9rem black;}
+    >.background {width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: -40;transform: translate3d(0,0,0) scale(2);background-image: url(../../img/banner.jpg); background-size: cover;
+    }
 }
 
 .loaded .banner .background {transform: scale(1);transition: 6.5s transform;}
 
-.banner h1 {color: #EEE; margin: 0;line-height: 40rem;text-transform: uppercase;text-shadow: 0 0 .9rem black;}
-
-main { width: 90%;margin: 5rem auto;}
 
 main p { margin: 0 0 3rem 0; }
-    
     
 //--------------------------------------- content --------------------------------
     
@@ -76,7 +80,7 @@ main p { margin: 0 0 3rem 0; }
     //갤러리 썸네일
         >ul{width: 80%; height: 450px; margin-left: 10%; margin-top: 10px;
         &:after{content: ""; display: block; clear: both;}
-        >li{width: 25%; height: 25%; background-color: #fff; float: left; border: 1px solid #333; box-sizing: border-box; 
+        >li{width: 33.3333%; height: 33.3333%; background-color: #fff; float: left; border: 1px solid #333; box-sizing: border-box; 
             >a{width: 100%; height: 100%; display: block; background-color:transparenta; transition:all 0.7s;
             &:hover{background-color: #0af;}
             } // a
@@ -86,7 +90,7 @@ main p { margin: 0 0 3rem 0; }
 
 .popup_btn{
     >li>a{background-repeat: no-repeat; background-position: center; transition: all 0.5s; background-size: 100%; margin: 10 10 10;
-        &:hover{background-size: 130%;}
+        &:hover{background-size: 150%;}
     } // a
     >li:nth-child(1)>a{background-image: url("../img/1.jpg");}
     >li:nth-child(2)>a{background-image: url("../img/2.jpg");}
@@ -103,7 +107,7 @@ main p { margin: 0 0 3rem 0; }
 } // .popup_btn
     
 //--------------------------------------- footer --------------------------------
-.footer {color: #333; width: 100%;left: 0;bottom: 20px;font-size: 1rem;text-align: center;
+.footer {color: #333; width: 100%;left: 0;bottom: 20px;font-size: 1rem;text-align: center;float: left; margin-top: 100px;
     >p>a {color: #333;text-decoration: none;}
 } // #footer
 .footer>p>a:hover{background-color: #ccc;}
