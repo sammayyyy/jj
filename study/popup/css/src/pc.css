@@ -16,7 +16,7 @@
           margin: 0 auto;
           float: right; }
           .container #headerBox > .header_wrap > .sitemap_wrap > h1 {
-            width: 10%;
+            width: 95px;
             height: 73px;
             text-align: center;
             line-height: 5rem;
@@ -32,7 +32,6 @@
               width: 300px;
               height: 20px;
               float: right;
-              margin-right: 20px;
               margin-top: 20px;
               color: #333; }
               .container #headerBox > .header_wrap > .sitemap_wrap > .sitemap > ul > li {
@@ -41,28 +40,28 @@
                 border-bottom: 3px solid #333; }
               .container #headerBox > .header_wrap > .sitemap_wrap > .sitemap > ul > .site_01 {
                 width: 42px;
-                margin-left: 20px; }
+                margin-left: 36px; }
               .container #headerBox > .header_wrap > .sitemap_wrap > .sitemap > ul > .site_02 {
                 width: 55px;
-                margin-left: 20px; }
+                margin-left: 36px; }
               .container #headerBox > .header_wrap > .sitemap_wrap > .sitemap > ul > .site_03 {
                 width: 88px;
-                margin-left: 20px; }
+                margin-left: 36px; }
         .container #headerBox > .header_wrap > .gnb {
           width: 100%;
           height: 50px;
           margin: 0 auto;
           float: left; }
           .container #headerBox > .header_wrap > .gnb > .gnb_box {
-            width: 100% px;
+            width: 100%;
             height: 100%;
             margin-right: 10px; }
             .container #headerBox > .header_wrap > .gnb > .gnb_box > ul {
-              width: 80%;
+              width: 865px;
               height: 50px;
               box-sizing: border-box;
               margin-left: 10%;
-              background-color: #333; }
+              background-color: #349; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li {
                 height: 20px;
                 float: left;
@@ -89,84 +88,48 @@
     height: 500px;
     background-color: #ccc;
     position: fixed;
+    margin-top: 10%;
+    margin-bottom: 10px;
     float: right;
-    margin-top: 50%; }
+    right: 0; }
 
-  #banner {
-    width: 100%;
-    height: 500px;
-    margin: 0 auto;
-    border: 1px solid #333;
-    margin-top: 100px;
-    background-color: #ddd;
+  .banner {
     position: relative;
-    overflow: hidden; }
-    #banner > .btn {
-      width: 100%;
-      height: 0;
-      position: relative; }
-      #banner > .btn > button {
-        width: 50px;
-        height: 500px;
-        position: absolute;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.5); }
-      #banner > .btn > button:hover {
-        background-color: rgba(255, 255, 255, 0.8); }
-      #banner > .btn > button.l_btn {
-        left: 0; }
-      #banner > .btn > button.r_btn {
-        right: 0; }
-    #banner .ban {
-      width: 600%;
-      height: 100%;
-      margin-left: -100%; }
-      #banner .ban > li {
-        width: calc(100% / 6);
-        height: 100%;
-        float: left;
-        text-align: center;
-        line-height: 500px;
-        font-size: 4rem; }
-      #banner .ban > .box1 {
-        background-color: #0cf; }
-      #banner .ban > .box2 {
-        background-color: #f5c; }
-      #banner .ban > .box3 {
-        background-color: #aac; }
-      #banner .ban > .box4 {
-        background-color: #ac7; }
-      #banner .ban > .box5 {
-        background-color: #7ac; }
-    #banner .ind {
-      width: 400px;
-      height: 20px;
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      margin-left: -150px; }
-      #banner .ind > li {
-        width: 20px;
-        height: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        float: left;
-        margin-left: 30px;
-        text-align: center;
-        line-height: 20px;
-        cursor: pointer;
-        transition: all 0.5s; }
-        #banner .ind > li > span {
-          width: 0;
-          height: 0;
-          display: block;
-          overflow: hidden; }
-      #banner .ind > li:hover {
-        background-color: #515151; }
-    #banner .ind > li.indWidth {
-      width: 60px;
-      background-color: #ccc;
-      box-shadow: 2px 2px 2px #515151; }
+    width: 100%;
+    height: 50rem;
+    padding: 0 5%;
+    margin-top: 100px;
+    overflow: hidden;
+    backface-visibility: hidden; }
+
+  .banner .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -40;
+    transform: translate3d(0, 0, 0) scale(1.25);
+    background-image: url(../../img/banner.jpg);
+    background-size: cover; }
+
+  .loaded .banner .background {
+    transform: scale(1);
+    transition: 6.5s transform; }
+
+  .banner h1 {
+    color: #EEE;
+    margin: 0;
+    line-height: 40rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 .9rem black; }
+
+  main {
+    width: 90%;
+    margin: 5rem auto; }
+
+  main p {
+    margin: 0 0 3rem 0; }
 
   #content {
     width: 960px;
@@ -241,33 +204,33 @@
     background-position: center;
     transition: all 0.5s;
     background-size: 100%;
-    margin-top: 10px; }
+    margin: 10 10 10; }
     .popup_btn > li > a:hover {
       background-size: 130%; }
   .popup_btn > li:nth-child(1) > a {
-    background-image: url("../img/j01.jpg"); }
+    background-image: url("../img/1.jpg"); }
   .popup_btn > li:nth-child(2) > a {
-    background-image: url("../img/j02.jpg"); }
+    background-image: url("../img/2.jpg"); }
   .popup_btn > li:nth-child(3) > a {
-    background-image: url("../img/j03.jpg"); }
+    background-image: url("../img/3.jpg"); }
   .popup_btn > li:nth-child(4) > a {
-    background-image: url("../img/j04.jpg"); }
+    background-image: url("../img/4.jpg"); }
   .popup_btn > li:nth-child(5) > a {
-    background-image: url("../img/j05.jpg"); }
+    background-image: url("../img/5.jpg"); }
   .popup_btn > li:nth-child(6) > a {
-    background-image: url("../img/j06.jpg"); }
+    background-image: url("../img/6.jpg"); }
   .popup_btn > li:nth-child(7) > a {
-    background-image: url("../img/j07.jpg"); }
+    background-image: url("../img/7.jpg"); }
   .popup_btn > li:nth-child(8) > a {
-    background-image: url("../img/j08.jpg"); }
+    background-image: url("../img/8.jpg"); }
   .popup_btn > li:nth-child(9) > a {
-    background-image: url("../img/j09.jpg"); }
+    background-image: url("../img/9.jpg"); }
   .popup_btn > li:nth-child(10) > a {
-    background-image: url("../img/j10.jpg"); }
+    background-image: url("../img/10.jpg"); }
   .popup_btn > li:nth-child(11) > a {
-    background-image: url("../img/j11.jpg"); }
+    background-image: url("../img/11.jpg"); }
   .popup_btn > li:nth-child(12) > a {
-    background-image: url("../img/j12.jpg"); }
+    background-image: url("../img/12.jpg"); }
 
   .footer {
     color: #333;
