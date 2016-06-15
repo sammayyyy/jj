@@ -5,34 +5,30 @@
     
 //--------------------------------------- header --------------------------------
     
-.container{width: 960px; height: auto; margin: 0 auto; 
+.container{width: 960px; height: auto; margin: 0 auto; z-index: 1000px;
     #headerBox{width: 100%; height: 50px;
         >.header_wrap{width: 100%; height: 100%; 
             >.sitemap_wrap{width: 100%; height:auto; margin: 0 auto; float: left; 
-                >.logo{width: 100px; height: 100px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto;  background-color: #333; position: fixed; z-index: 50px;
-                    >ul{width: 100%; height: 100%;background-color: #333;
-                        >li{width:100%; height: 100%; float: left; margin: 0 auto;}
+                >.logo{width: 100px; height: 100px; text-align: center; line-height: 5rem ; color: #ccc; float: left; margin: 0 auto;border-radius: 10px;  background-color: #333; position: fixed; z-index: 2;opacity:0.7;
+                    >ul{width: 100%; height: 100%;background-color: #333;border-radius: 5px;
+                        >li{width:100%; height: 100%; float: left; margin: 0 auto;
+                            >a{color: #eee;}
+                        }
                     }//ul
                 }//logo
-                >.logo:hover{height: 120px;}
-                >.sitemap{width: 100%;height: 100%; margin: 0 auto;
-                    >ul{width: 300px;height: 20px;float: right; margin-top: 70px;color: #333;
-                        >li{height: 100%; float: left; border-bottom: 3px solid #333;}
-                    >.site_01 {width: 42px;margin-left:36px;}
-                    >.site_02 {width: 55px;margin-left:36px;}
-                    >.site_03 {width: 88px;margin-left:36px;}
-                    }// li
-                } //.sitemap
+                >.logo:hover{height: 140px;}
             } // .sitemap_wrap
-            >.gnb{width: 860px; height: 50px; margin: 0 auto; float: right; position: fixed; margin-left: 50px;
+            >.gnb{width: 860px; height: 50px; margin: 0 auto; float: right; position: fixed; margin-left: 98px;z-index: 500px; background-color: #333;opacity:0.7;border-radius: 5px;
                 >.gnb_box{width: 100%; height: 100%; float: right;
-                > ul {width: 860px; height: 50px; margin-left: 5%;
-                    > li {height: 20px; float: left; margin-left: 50px;  margin-top: 18px;border-bottom: 3px solid #ccc;}
-                    > .gnb_01 {width: 80px; margin-left: 70px; }
-                    > .gnb_02 {width: 66px; margin-left: 70px; }
-                    > .gnb_03 {width: 104px; margin-left: 70px;}
-                    > .gnb_04 {width: 80px; margin-left: 70px;}
-                    > .gnb_05 {width: 66px; margin-left: 70px;}
+                > ul {width: 860px; height: 50px; margin-left: 5%; font-size: 1rem;
+                    > li {height: 20px; float: left; margin-left: 60px;  margin-top: 12px;border-bottom: 3px solid #eee;
+                        >a{color: #eee;font-size: 1rem;}
+                    }
+                    > .gnb_01 {width: 80px;}
+                    > .gnb_02 {width: 66px;}
+                    > .gnb_03 {width: 104px;}
+                    > .gnb_04 {width: 80px;}
+                    > .gnb_05 {width: 66px;}
                 } //ul
                 } // .gnb_box
             }  // .gnb
@@ -41,38 +37,46 @@
 } // .container
 
 //--------------------------------------- fix --------------------------------
-.fix{width: 88px; height: 500px; background-color: #ccc; position: fixed; margin-top: 10%; float: right; right: 0;
+.fix{width: 50px; height: 360px; position: fixed; margin-top: 20%; float: right; right: 0;border-radius: 10px;
     >ul{width: 100%;height: 100%; margin: 0 auto;
-        >li{width: 88px;height: 20px;float: left; margin-top: 40px;color: #333; font-weight: inherit;}
-        >li:nth-child(1)>a{width: 42px;}
-        >li:nth-child(2)>a{width: 55px;}
-        >li:nth-child(3)>a{width: 88px;}
+        >li{width: 50px;height: 50px;float: left; margin-top: 20px;color: #333; font-weight: inherit; 
+            >a{width: 100%; height: 100%;background-size: 100%;background-repeat: no-repeat;background-position: center center; display: block;border-radius: 10px;}
+        }
+        >li:nth-child(1)>a{background-image: url(../../img/a.png);}
+        >li:nth-child(2)>a{background-image: url(../../img/b.png);}
+        >li:nth-child(3)>a{background-image: url(../../img/c.png);}
+        >li:nth-child(4)>a{background-image: url(../../img/d.png);}
+        >li:nth-child(5)>a{background-image: url(../../img/e.png);}
+        >li:nth-child(1)>a:hover{background-color: #ccc;}
+        >li:nth-child(2)>a:hover{background-color: #ccc;}
+        >li:nth-child(3)>a:hover{background-color: #ccc;}
+        >li:nth-child(4)>a:hover{background-color: #ccc;}
+        >li:nth-child(5)>a:hover{background-color: #ccc;}
     }
 }  
     
 //--------------------------------------- banner --------------------------------
-.banner {position: relative; width: 100%;height: 50rem;padding: 0 5%;overflow: hidden;backface-visibility: hidden;
-    >h1 {font-size: 4rem; color: #EEE; margin: 0;line-height: 40rem;text-transform: uppercase;text-shadow: 0 0 .9rem black;}
-    >.background {width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: -40;transform: translate3d(0,0,0) scale(2);background-image: url(../../img/banner.jpg); background-size: cover;
-    }
+.banner {position: relative; width: 100%;height: 70rem;padding: 0 5%;overflow: hidden; top: -100px;
+    >h1 {font-size: 4rem; color: #EEE; margin: 0 auto;line-height: 60rem;text-transform:uppercase;text-shadow: 0 0 .9rem black; }
+    >.background {width: 100%;height: 100%;position: absolute;left: 0;top: 0;transform: translate3d(0,0,0) scale(3);background-image: url(../../img/banner.jpg); background-size: cover;z-index: -40;}
 }
 
-.loaded .banner .background {transform: scale(1);transition: 6.5s transform;}
+.loaded .banner .background {transform: scale(1);transition: 30.5s;}
 
 
 main p { margin: 0 0 3rem 0; }
     
 //--------------------------------------- content --------------------------------
     
-#content{width: 960px; height: 400px; margin: 0 auto; margin-top: 50px; 
+#content{width: 960px; height: 800px; margin: 0 auto; margin-top: 50px; 
     // 갤러리 팝업 상자
     >.popup1{width: 100%; height: 100%; background-color: rgba(#333, 0.5); position: fixed; z-index: 500; top:0; left: 0; display: none; 
         
-        >.popupBox{width: 40%; height: auto; background-color: #fff; border: 3px solid #333; position: absolute; left: 30%; top:20%; border-radius: 10px; box-sizing: border-box; box-shadow: 1px 1px 1px #333;
+        >.popupBox{width: 60%; height: auto; background-color: #fff; border: 3px solid #333; position: absolute; left: 20%; top:20%; border-radius: 10px; box-sizing: border-box; box-shadow: 1px 1px 1px #333;
             >img{width: 100%; height: auto;}
         } //.popupBox
         
-        >.close{width: 2rem; height: 2rem; background-color: #333; color: #fff; font-weight: bold; position: absolute; right: calc(30% - 1rem); top: calc(20% - 1rem); z-index: 700; border-radius: 50%; font-size: 1.5rem; transition: all 0.5s;
+        >.close{width: 2rem; height: 2rem; background-color: #333; color: #fff; font-weight: bold; position: absolute; right: calc(20% - 1rem); top: calc(20% - 1rem); z-index: 700; border-radius: 50%; font-size: 1.5rem; transition: all 0.5s;
             &:hover{transform: rotate(45deg);}
         }// .close
     }// .popup1
@@ -80,7 +84,7 @@ main p { margin: 0 0 3rem 0; }
     //갤러리 썸네일
         >ul{width: 80%; height: 450px; margin-left: 10%; margin-top: 10px;
         &:after{content: ""; display: block; clear: both;}
-        >li{width: 33.3333%; height: 33.3333%; background-color: #fff; float: left; border: 1px solid #333; box-sizing: border-box; 
+        >li{width: 33.3333%; height: 40%; background-color: #fff; float: left; border: 2px solid #eee; box-sizing: border-box; border-radius: 10px;
             >a{width: 100%; height: 100%; display: block; background-color:transparenta; transition:all 0.7s;
             &:hover{background-color: #0af;}
             } // a
@@ -89,7 +93,7 @@ main p { margin: 0 0 3rem 0; }
 } // #content
 
 .popup_btn{
-    >li>a{background-repeat: no-repeat; background-position: center; transition: all 0.5s; background-size: 100%; margin: 10 10 10;
+    >li>a{background-repeat: no-repeat; background-position: center; transition: all 0.5s; background-size: 120%; margin: 10 10 10 10;border-radius: 10px;
         &:hover{background-size: 150%;}
     } // a
     >li:nth-child(1)>a{background-image: url("../img/1.jpg");}
@@ -111,5 +115,13 @@ main p { margin: 0 0 3rem 0; }
     >p>a {color: #333;text-decoration: none;}
 } // #footer
 .footer>p>a:hover{background-color: #ccc;}
+    /*>.sitemap{width: 100%;height: 100%; margin: 0 auto;
+                    >ul{width: 300px;height: 20px;float: right; margin-top: 70px;
+                        >li{height: 100%; float: left; border-bottom: 3px solid #eee;color: #fff;}
+                    >.site_01 {width: 42px;margin-left:36px;}
+                    >.site_02 {width: 55px;margin-left:36px;}
+                    >.site_03 {width: 88px;margin-left:36px;}
+                    }// li
+                } //.sitemap*/
 
 } // pc
