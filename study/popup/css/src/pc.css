@@ -38,7 +38,10 @@
                 float: left;
                 margin: 0 auto; }
                 .container #headerBox > .header_wrap > .sitemap_wrap > .logo > ul > li > a {
-                  color: #eee; }
+                  width: 100%;
+                  height: 100%;
+                  color: #eee;
+                  font-size: 3rem; }
           .container #headerBox > .header_wrap > .sitemap_wrap > .logo:hover {
             height: 140px; }
         .container #headerBox > .header_wrap > .gnb {
@@ -72,16 +75,18 @@
                   color: #eee;
                   font-size: 1rem; }
                 .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li > ul {
-                  width: 600px;
+                  width: 860px;
                   height: 600px;
                   float: left;
                   margin: 0 auto;
                   padding: 0;
                   display: none;
                   position: absolute;
+                  margin-left: -103px;
                   top: 100%;
                   left: 0;
-                  background: #333; }
+                  background: #333;
+                  border-radius: 5px; }
                   .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li > ul > li {
                     float: none;
                     width: 200px; }
@@ -92,19 +97,19 @@
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_02 {
                 width: 66px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_02 > ul {
-                margin-left: -50px; }
+                margin-left: -243px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_03 {
                 width: 104px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_03 > ul {
-                margin-left: -180px; }
+                margin-left: -369px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_04 {
                 width: 80px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_04 > ul {
-                margin-left: -274px; }
+                margin-left: -533px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_05 {
                 width: 66px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_05 > ul {
-                margin-left: -414px; }
+                margin-left: -673px; }
           .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li:hover > ul {
             display: block; }
 
@@ -112,7 +117,7 @@
     width: 50px;
     height: 360px;
     position: fixed;
-    margin-top: 10%;
+    margin-top: 15%;
     float: right;
     right: 0;
     border-radius: 10px;
@@ -155,15 +160,20 @@
       .fix > ul > li:hover > ul {
         display: block; }
       .fix > ul > li:nth-child(1) > a {
-        background-image: url(../../img/a.png); }
+        background-image: url(../../img/a.png);
+        margin-bottom: -150px; }
       .fix > ul > li:nth-child(2) > a {
-        background-image: url(../../img/b.png); }
+        background-image: url(../../img/b.png);
+        margin-bottom: -210px; }
       .fix > ul > li:nth-child(3) > a {
-        background-image: url(../../img/c.png); }
+        background-image: url(../../img/c.png);
+        margin-bottom: -270px; }
       .fix > ul > li:nth-child(4) > a {
-        background-image: url(../../img/d.png); }
+        background-image: url(../../img/d.png);
+        margin-bottom: -330px; }
       .fix > ul > li:nth-child(5) > a {
-        background-image: url(../../img/e.png); }
+        background-image: url(../../img/e.png);
+        margin-bottom: -390px; }
       .fix > ul > li:nth-child(1) > a:hover {
         opacity: 0.7;
         background-color: #333; }
@@ -319,16 +329,16 @@
     background-image: url("../img/12.jpg"); }
 
   .footer {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    bottom: 1px;
     color: #333;
-    width: 100%;
-    left: 0;
-    bottom: 20px;
-    font-size: 1rem;
-    text-align: center;
-    float: left; }
+    position: fixed;
+    background-color: #333;
+    opacity: 0.7; }
     .footer > p > a {
-      color: #333;
-      text-decoration: none; }
+      color: #333; }
 
   .footer > p > a:hover {
     background-color: #ccc; }
