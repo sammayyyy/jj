@@ -12,8 +12,7 @@ html, body {
   .container {
     width: 960px;
     height: auto;
-    margin: 0 auto;
-    z-index: 1000px; }
+    margin: 0 auto; }
     .container #headerBox {
       width: 100%;
       height: 50px; }
@@ -59,7 +58,7 @@ html, body {
           float: right;
           position: fixed;
           margin-left: 98px;
-          z-index: 500px;
+          z-index: 50;
           background-color: #333;
           opacity: 0.7;
           border-radius: 5px; }
@@ -77,20 +76,47 @@ html, body {
                 float: left;
                 margin-left: 60px;
                 margin-top: 12px;
-                border-bottom: 3px solid #eee; }
+                border-bottom: 3px solid #eee;
+                position: relative; }
                 .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li > a {
                   color: #eee;
                   font-size: 1rem; }
+                .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li > ul {
+                  width: 600px;
+                  height: 600px;
+                  float: left;
+                  margin: 0 auto;
+                  padding: 0;
+                  display: none;
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  background: #333; }
+                  .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li > ul > li {
+                    float: none;
+                    width: 200px; }
+                    .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li > ul > li > a {
+                      line-height: 120%; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_01 {
                 width: 80px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_02 {
                 width: 66px; }
+              .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_02 > ul {
+                margin-left: -50px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_03 {
                 width: 104px; }
+              .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_03 > ul {
+                margin-left: -180px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_04 {
                 width: 80px; }
+              .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_04 > ul {
+                margin-left: -274px; }
               .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_05 {
                 width: 66px; }
+              .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > .gnb_05 > ul {
+                margin-left: -414px; }
+          .container #headerBox > .header_wrap > .gnb > .gnb_box > ul > li:hover > ul {
+            display: block; }
 
   .fix {
     width: 50px;
@@ -99,7 +125,8 @@ html, body {
     margin-top: 20%;
     float: right;
     right: 0;
-    border-radius: 10px; }
+    border-radius: 10px;
+    z-index: 10; }
     .fix > ul {
       width: 100%;
       height: 100%;
@@ -108,8 +135,7 @@ html, body {
         width: 50px;
         height: 50px;
         float: left;
-        margin-top: 20px;
-        color: #333;
+        margin-top: 10px;
         font-weight: inherit; }
         .fix > ul > li > a {
           width: 100%;
@@ -118,7 +144,26 @@ html, body {
           background-repeat: no-repeat;
           background-position: center center;
           display: block;
-          border-radius: 10px; }
+          border-radius: 10px;
+          background-color: #fff;
+          opacity: 0.7;
+          position: relative; }
+        .fix > ul > li > ul {
+          width: 100%;
+          height: 100%;
+          margin-left: -50px; }
+          .fix > ul > li > ul > li {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            padding: 0;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #333; }
+            .fix > ul > li > ul > li > a {
+              float: none; }
       .fix > ul > li:nth-child(1) > a {
         background-image: url(../../img/a.png); }
       .fix > ul > li:nth-child(2) > a {
@@ -130,30 +175,38 @@ html, body {
       .fix > ul > li:nth-child(5) > a {
         background-image: url(../../img/e.png); }
       .fix > ul > li:nth-child(1) > a:hover {
-        background-color: #ccc; }
+        opacity: 0.7;
+        background-color: #333; }
       .fix > ul > li:nth-child(2) > a:hover {
-        background-color: #ccc; }
+        opacity: 0.7;
+        background-color: #333; }
       .fix > ul > li:nth-child(3) > a:hover {
-        background-color: #ccc; }
+        opacity: 0.7;
+        background-color: #333; }
       .fix > ul > li:nth-child(4) > a:hover {
-        background-color: #ccc; }
+        opacity: 0.7;
+        background-color: #333; }
       .fix > ul > li:nth-child(5) > a:hover {
-        background-color: #ccc; }
+        opacity: 0.7;
+        background-color: #333; }
 
   .banner {
-    position: relative;
     width: 100%;
-    height: 70rem;
+    height: 64rem;
+    position: relative;
     padding: 0 5%;
     overflow: hidden;
     top: -100px; }
     .banner > h1 {
+      width: 600px;
+      height: 600px;
       font-size: 4rem;
       color: #EEE;
       margin: 0 auto;
       line-height: 60rem;
       text-transform: uppercase;
-      text-shadow: 0 0 .9rem black; }
+      text-shadow: 0 0 .9rem black;
+      margin-left: 170px; }
     .banner > .background {
       width: 100%;
       height: 100%;
@@ -163,11 +216,11 @@ html, body {
       transform: translate3d(0, 0, 0) scale(3);
       background-image: url(../../img/banner.jpg);
       background-size: cover;
-      z-index: -40; }
+      z-index: -5; }
 
   .loaded .banner .background {
     transform: scale(1);
-    transition: 30.5s; }
+    transition: 20.5s; }
 
   main p {
     margin: 0 0 3rem 0; }
@@ -291,13 +344,13 @@ html, body {
   .footer > p > a:hover {
     background-color: #ccc; }
 
-  /*>.sitemap{width: 100%;height: 100%; margin: 0 auto;
-                  >ul{width: 300px;height: 20px;float: right; margin-top: 70px;
-                      >li{height: 100%; float: left; border-bottom: 3px solid #eee;color: #fff;}
+  /* >.sitemap{width: 100%;height: 100%; margin: 0 auto;
+          >ul{width: 300px;height: 20px;float: right; margin-top: 50px;
+              >li{height: 100%; float: left; border-bottom: 3px solid #eee;color: #fff;}
                   >.site_01 {width: 42px;margin-left:36px;}
                   >.site_02 {width: 55px;margin-left:36px;}
                   >.site_03 {width: 88px;margin-left:36px;}
                   }// li
-              } //.sitemap*/ }
+      } //.sitemap*/ }
 
 /*# sourceMappingURL=all.css.map */
