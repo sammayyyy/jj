@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-	<meta charset="euc-kr">
-	<title>구글맵 API 활용하기</title>
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	<script>
-		function initialize() {
+function initialize() {
 
 			/*
 				http://openapi.map.naver.com/api/geocode.php?key=f32441ebcd3cc9de474f8081df1e54e3&encoding=euc-kr&coord=LatLng&query=서울특별시 강남구 강남대로 456
@@ -53,10 +45,3 @@
 				infowindow.open(map, marker);
 			});
 		}
-	</script>
-</head>
-
-<body onload="initialize()">
-	<div id="map_view" style="width:600px; height:600px;"></div>
-</body>
-</html>
