@@ -60,6 +60,6 @@ nav>ul {
 
 .slides>.slide:nth-child(1) {background-image: url(../img/home.jpg);}
 .slides>.slide:nth-child(2) {background-image: url(../img/aboutme.png);}
-.slides>.slide:nth-child(3) {background-image: url(../img/Web-Design.png);}
+.slides>.slide:nth-child(3) /*{background-image: url(../img/Web-Design.png);}*/
 .slides>.slide:nth-child(4) {background-image: url(../img/portfolio.gif);background-repeat: no-repeat;}
 .slides>.slide img {width: 100%;}
